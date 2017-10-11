@@ -40,8 +40,10 @@ Click `Save` a final time to apply these settings.
 
 Create the whitelist file, `user-whitelist.txt` in the `Misecellaneous Data Files` directory (ex: `/usr/local/lib/npme/data`).
 
-Each user that you want to have access to npmE must be listed on a separate line, by their email address.
+Each user that you want to have access to npmE must be listed on a separate line, by their email address (Note: The email associated with your github account that you are using for authentication should be [public](https://help.github.com/articles/setting-your-commit-email-address-on-github/) for GitHub protal.)
+
+To restrict package installs within the users that are listed in `user-whitelist.txt` file, visit npm Enterprise's admin console and set `Auth All Installs` to `Yes`.
 
 ## Restart Your Instance
 
-Navigate to your instance's dashboard and use the buttons to stop and restart the instance. After the restart, only users in the whitelist file will be permitted to authenticate.
+Navigate to your instance's dashboard and use the buttons to stop and restart the instance. After the restart, only users in the whitelist file will be permitted to install and publish the packages.
